@@ -300,3 +300,6 @@ body {
         margin-top: 300px;
       }
 }
+.callout.primary {
+    background: #f542f2;
+}
