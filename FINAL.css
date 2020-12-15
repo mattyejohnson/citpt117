@@ -71,7 +71,8 @@ body {
 }
 
 .main-nav li a {
-    color: rgba(243, 241, 241, 0.664)
+    color: rgba(243, 241, 241, 0.664);
+    text-decoration: none;
 }
   
 .logo {
@@ -172,7 +173,7 @@ body {
 .news-card ul li p {
     margin-left: 8%;
     margin-right: 8%;
-    padding-top: 8%;
+    padding-top: 14%;
     font-size: 4rem;
     font-family: "Punk Kid";
 }
@@ -214,6 +215,9 @@ body {
       margin-top: 6%;
       font-size: 2em;
       font-family: "Punk Kid";
+    }
+    .news-card ul li {
+        font-size: 1em;
     }
 }
 
