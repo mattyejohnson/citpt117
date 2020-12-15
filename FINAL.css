@@ -576,3 +576,14 @@ label::after {
     font-size: 1.5em;
 }
 /* End Discography page CSS */
+
+/* Contact page h1 CSS */
+
+.contact h1 {
+    font-size: 3em;
+    font-family: "Punk Kid";
+    text-align: center;
+    background-color: rgb(240, 194, 237);
+}
+
+/* End contact page h1 CSS */
