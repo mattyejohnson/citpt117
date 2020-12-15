@@ -227,7 +227,6 @@ body {
 
 .gig-table {
     border-collapse: collapse;
-    border: white 1px;
 }
   
 .gig-table.unstriped tbody {
