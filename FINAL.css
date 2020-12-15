@@ -566,4 +566,8 @@ label::after {
     font-size: 6em;
 }
 
+.column h2 {
+    font-family: 'Railway', sans-serif;
+    font-size: 1.5em;
+}
 /* End Discography page CSS */
