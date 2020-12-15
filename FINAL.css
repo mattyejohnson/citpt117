@@ -1,7 +1,6 @@
 
 body {
     background-color: #f542f2;
-    text-decoration: none;
 }
 
 /* Begin CSS for main navigation bar */
@@ -9,6 +8,7 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
   
 .navbar {
