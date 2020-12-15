@@ -587,3 +587,70 @@ label::after {
 }
 
 /* End contact page h1 CSS */
+
+/* Footer CSS */
+
+.footer {
+    background-image: url("footer.svg");
+    padding: 3rem 3rem;
+    color: black;
+}
+  
+@media screen and (max-width: 39.9375em) {
+    .footer h4 {
+      font-size: 1.5rem;
+    }
+}
+  
+.footer p {
+    color: #250425;
+    font-family: "Railway", sans-serif;
+}
+  
+.footer .mailing-list {
+    margin-bottom: 1.5rem;
+    font-family: "Punk Kid";
+    font-size: 2em;
+}
+
+.footer h4 {
+    font-family: "Punk Kid";
+    font-size: 2em;
+}
+  
+.footer .mailing-container {
+    margin-bottom: 2rem;
+}
+  
+.footer .about-section, .footer .tag-section {
+    margin-bottom: 2rem;
+    font-family: "Railway", sans-serif;
+}
+  
+.footer .about-section a, .footer .tag-section a {
+    color: #3a1039;
+    font-family: "Railway", sans-serif;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+  
+.footer .subscribe-button {
+    background-color: black;
+}
+  
+.footer .subscribe-button:hover {
+    background-color: #ef9df1;
+    transition: color 0.3s ease-in;
+}
+  
+.footer .fa-chevron-circle-up {
+    font-size: 5rem;
+    color: #e5b8f0;
+}
+  
+.footer .fa-chevron-circle-up:hover {
+    color: #ef9df1;
+    transition: color 0.3s ease-in;
+}
+
+/* End footer CSS */
