@@ -224,10 +224,7 @@ body {
 /* End poster CSS */
 
 /* Begin Gigs page CSS */
-table {
-    border-collapse: collapse;
-    border: none;
-}
+
 .gig-table {
     border-collapse: collapse;
 }
@@ -341,7 +338,6 @@ li.collapse input:checked ~ label::after {
 #dropdown li {
     list-style: none;
     padding: .8rem .8rem;
-    border-bottom: .2rem solid #86AAD4;
 }
 
 #dropdown li:last-child {
