@@ -1,3 +1,4 @@
+
 body {
     background-color: #f542f2;
 }
@@ -76,7 +77,6 @@ body {
 .logo {
     display: inline-block;
     padding-left: 1rem;
-
 }
   
 .navbar-toggle {
@@ -153,11 +153,6 @@ body {
     width: 90%;
   }
   
-.news-card .card-divider h3 {
-    margin-bottom: 0;
-    color: transparent;
-}
-  
 .news-card ul {
     list-style-type: none;
     margin: 0;
@@ -171,18 +166,28 @@ body {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    font-size: 1.2rem;
 }
   
 .news-card ul li p {
     margin-left: 8%;
     margin-right: 8%;
-    margin-top: 2%;
+    padding-top: 8%;
     font-size: 4rem;
     font-family: "Punk Kid";
 }
 
+.news-card ul li a {
+    color: #4d154c;
+    font-weight: bolder;
+}
+
 .news-card .card-section ul {
     padding-bottom: 10rem;
+}
+
+.card-section {
+    background-color: transparent;
 }
 
 .news {
@@ -190,6 +195,8 @@ body {
     position: absolute;
     left: 0;
     right: 0;
+    min-height: 100%;
+    margin-bottom: -142px;
 }
 
 .news h3 {
@@ -197,6 +204,11 @@ body {
     font-family: "Punk Kid";
     text-align: center;
     color: #581857;
+}
+
+.news:after {
+    content: "";
+    display: block;
 }
   
 @media screen and (max-width: 1000px) {
@@ -211,10 +223,6 @@ body {
 
 /* End poster CSS */
   
-  
-
-
-
-  
-  
-  
+.footer, .news:after {
+    height: 142px;
+}
