@@ -412,6 +412,7 @@ label::after {
     transition: all 0.25s ease-in;
     width: 100%;
     background: url(concretebio8.svg);
+    background-color: black;
 }
   
 .timeline::before {
