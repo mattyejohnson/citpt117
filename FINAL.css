@@ -226,7 +226,7 @@ body {
 /* Begin Gigs page CSS */
 table {
     border-collapse: collapse;
-    border: non;
+    border: none;
 }
 .gig-table {
     border-collapse: collapse;
