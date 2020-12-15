@@ -305,13 +305,15 @@ img {
     cursor: pointer;
     color: white;
     font-size: 1.1em;
+    padding-left: 2em;
+    padding-top: 2em;
 }
   
 .dropdown input[type=checkbox] {
     display: none; 
 }
   
-li.collapse ul {
+.collapse ul {
     visibility: hidden;
     opacity: 0;
     max-height: 0; 
@@ -324,15 +326,16 @@ label::after {
     top: 0;
     right: 0;
     transition: all 0.5s;
+    padding-top: 2em;
 }
   
-li.collapse input:checked ~ ul {
+.collapse input:checked ~ ul {
     visibility: visible;
     opacity: 1;
     max-height: 125em;
 }
   
-li.collapse input:checked ~ label::after {
+.collapse input:checked ~ label::after {
     transform: rotate(90deg);
 }
   
@@ -345,7 +348,10 @@ li.collapse input:checked ~ label::after {
     list-style: none;
     padding: .8rem .8rem;
     border-bottom: .2rem solid #86AAD4;
-    color: white;
+    padding-left: 2em;
+    padding-right: 1em;
+    padding-top: 2em;
+    line-height: 2em;
 }
 
 .dropdown li:last-child {
