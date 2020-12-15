@@ -188,7 +188,7 @@ body {
 
 .card-section {
     background-color: transparent;
-    opacity: 0%;
+    opacity: 0.5;
 }
 
 .news {
