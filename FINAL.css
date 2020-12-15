@@ -224,10 +224,12 @@ body {
 /* End poster CSS */
 
 /* Begin Gigs page CSS */
-
+table {
+    border-collapse: collapse;
+    border: non;
+}
 .gig-table {
     border-collapse: collapse;
-    border: none;
 }
   
 .gig-table.unstriped tbody {
@@ -244,10 +246,6 @@ body {
 .gig-table td {
     background-color: black;
     font-family: 'Railway', sans-serif;
-}
-
-.gig-table th {
-    border: white 1px;
 }
 
 td p {
