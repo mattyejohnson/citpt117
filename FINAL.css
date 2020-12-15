@@ -227,11 +227,12 @@ body {
 
 .gig-table {
     border-collapse: collapse;
+    border: white 1px;
 }
   
 .gig-table.unstriped tbody {
     background-color: transparent;
-  }
+}
   
 .gig-table th {
     color: white;
@@ -250,6 +251,11 @@ td p {
     width: 100%;
     text-decoration: none;
     color: white;
+}
+
+tbody, tfoot, thead {
+    border: 1px solid #f1f1f1;
+    background-color: #fefefe;
 }
 
 .gigs {
@@ -277,6 +283,19 @@ td p {
 .map h4 {
     font-family: 'Punk Kid';
     font-size: 3em;
+    text-rendering: optimizeLegibility;
+    font-weight: normal;
+}
+
+.map h5 {
+    padding: 1em;
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
 }
 
 #dropdown label {
@@ -366,3 +385,5 @@ li.collapse input:checked ~ label::after {
         left: -9999em;
     }
 }
+
+/* End Gigs CSS */
