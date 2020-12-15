@@ -208,7 +208,7 @@ body {
 }
   
 @media screen and (max-width: 65em) {
-    .news-card ul h2 {
+    .news-card ul li h2 {
       margin-left: 8%;
       margin-right: 8%;
       margin-top: 6%;
