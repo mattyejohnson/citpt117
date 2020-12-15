@@ -144,6 +144,74 @@ body {
 
 /* End navbar CSS */
 
+/* Begin CSS for Index page */
+
+.hero-full-screen {
+    height: 100vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: url("concrete.svg") center center no-repeat;
+    background-size: cover;
+  }
+  
+  .hero-full-screen .middle-content-section {
+    text-align: center;
+    color: #fefefe;
+  }
+  
+  .hero-full-screen .top-content-section {
+    width: 100%;
+  }
+  
+  .hero-full-screen .bottom-content-section {
+    padding: 1rem;
+  }
+  
+  .hero-full-screen .bottom-content-section svg {
+    height: 3.75rem;
+    width: 3.75rem;
+    fill: #fefefe;
+  }
+  
+  .hero-full-screen .top-bar {
+    background: transparent;
+  }
+  
+  .hero-full-screen .top-bar .menu {
+    background: transparent;
+  }
+  
+  .hero-full-screen .top-bar .menu-text {
+    color: #fefefe;
+  }
+  
+  .hero-full-screen .top-bar .menu li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .hero-full-screen .top-bar .menu a {
+    color: #fefefe;
+    font-weight: bold;
+  }
+  
+
+/* End Index CSS */
+
 /* Begin CSS for news posters */
 
 .news-card {
@@ -220,6 +288,15 @@ body {
         font-size: 1em;
     }
 }
+
+/* Animation */
+
+.news .animate__jello {
+    animation-duration: 1s;
+    animation-iteration-count: 4;
+}
+
+/* End animation */
 
 /* End poster CSS */
 
@@ -554,16 +631,10 @@ label::after {
 
 /* End Bio page CSS */
 
-
 /* Begin Discography page CSS */
 
 .callout.primary {
     background: #f07aee;
-}
-
-.callout.primary p {
-    font-family: 'Railway', sans-serif;
-    font-size: 1.2em;
 }
 
 .callout.primary h1 {
@@ -571,10 +642,16 @@ label::after {
     font-size: 6em;
 }
 
+.callout.primary p {
+    font-family: 'Railway', sans-serif;
+    font-size: 1.2em;
+}
+
 .column h2 {
     font-family: 'Railway', sans-serif;
     font-size: 1.5em;
 }
+
 /* End Discography page CSS */
 
 /* Contact page h1 CSS */
@@ -654,3 +731,182 @@ label::after {
 }
 
 /* End footer CSS */
+
+/* Breadcrumb CSS */
+/* Style the list */
+
+ul.breadcrumb {
+    padding: 10px 10px;
+    list-style: none;
+    padding-top: 2em;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    padding-left: 1em;
+    color: #f89cf8;
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #f542f2;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #f89cf8;
+  }
+
+
+/* End breadcrumb CSS */
+
+/* Lyrics pages CSS */
+
+.columns h1 {
+    color: white;
+    text-align: center;
+    margin-top: .5em;
+    font-family: "Punk Kid";
+    font-size: 3em;
+  }
+  
+
+.dropdown1 label {
+    position: relative;
+    display: block;
+    width: 80%;
+    cursor: pointer;
+    color: white;
+    font-size: 1.1em;
+    padding-left: 2em;
+    padding-top: 2em;
+}
+  
+.dropdown1 input[type=checkbox] {
+    display: none; 
+}
+  
+.collapse1 ul {
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0; 
+    transition: all 0.5s;
+}
+
+label::after {
+    content: "\25b6";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    padding-top: 2em;
+}
+  
+.collapse1 input:checked ~ ul {
+    visibility: visible;
+    opacity: 1;
+    max-height: 125em;
+}
+  
+.collapse1 input:checked ~ label::after {
+    transform: rotate(90deg);
+}
+  
+.dropdown1 {
+    margin: .5em;
+    padding: 0;
+}
+
+.dropdown1 li {
+    list-style: none;
+    padding: .8rem .8rem;
+    border-bottom: .2rem solid #86AAD4;
+    padding-left: 2em;
+    padding-right: 1em;
+    padding-top: 2em;
+    line-height: 2em;
+}
+
+.dropdown1 li:last-child {
+    border: 0;
+}
+  
+.dropdown1 a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-family: 'Railway', sans-serif;
+}
+
+.portfolio-resume-scrolling-container {
+    height: 3000px;
+    width: 1400px;
+    border: 1px solid #cacaca;
+    background-image: url("concretebio8.svg");
+  }
+  
+  .portfolio-resume-overview {
+    height: 400px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    opacity: 1;
+    z-index: 0;
+  }
+  
+  .portfolio-resume-overview:after {
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+  
+  .portfolio-resume-overview-content {
+    max-width: 300px;
+    z-index: 1;
+  }
+  
+  .portfolio-resume-scrolling {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 1000px;
+  }
+
+  label::after {
+    content: "\25b6";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+  }
+  
+  @media print, screen and (max-width: 40em) {
+    .portfolio-resume-scrolling {
+      height: 400px;
+      overflow-y: auto;
+    }
+
+    .portfolio-resume-overview-content {
+        width: 30%;
+        margin-right: 600px;
+      }
+
+    .columns h1 {
+        margin-right: 600px;
+    }
+      
+  }
+
+  /* End lyrics pages CSS */
