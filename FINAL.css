@@ -191,8 +191,6 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    min-height: 100%;
-    margin-bottom: -142px;
 }
 
 .news h3 {
@@ -221,7 +219,4 @@ body {
 }
 
 /* End poster CSS */
-  
-.footer, .news:after {
-    height: 142px;
-}
+
