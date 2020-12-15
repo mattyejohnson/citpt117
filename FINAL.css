@@ -1,6 +1,7 @@
 
 body {
     background-color: #f542f2;
+    text-decoration: none;
 }
 
 /* Begin CSS for main navigation bar */
@@ -19,7 +20,6 @@ body {
 .main-nav {
     list-style-type: none;
     display: none;    
-    text-decoration: none;
 }
 
 .main-nav a:before,
@@ -72,14 +72,6 @@ body {
 
 .main-nav li a {
     color: rgba(243, 241, 241, 0.664);
-}
-
-.main-nav a {
-    text-decoration: none;
-}
-
-.navbar a {
-    text-decoration: none;
 }
   
 .logo {
