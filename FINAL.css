@@ -290,6 +290,7 @@ tbody, tfoot, thead {
 .map h5 {
     padding: 1em;
     font-weight: normal;
+    font-weight: 1.2em;
 }
 
 img {
