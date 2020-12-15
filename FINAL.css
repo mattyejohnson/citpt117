@@ -72,6 +72,13 @@ body {
 
 .main-nav li a {
     color: rgba(243, 241, 241, 0.664);
+}
+
+.main-nav a {
+    text-decoration: none;
+}
+
+.navbar a {
     text-decoration: none;
 }
   
