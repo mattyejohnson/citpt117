@@ -505,18 +505,19 @@ label::after {
     float: right;
     text-align: left;
 }
-
-.timeline-content-date p {
-    font-size: 2em;
-}
   
-.timeline h2 {
+.timeline h1 {
     font-family: "Punk Kid";
     text-align: center;
     font-size: 4em;
     color: rgb(240, 130, 212);
     z-index: 1;
     margin-bottom: 1em;
+}
+
+.timeline-content-date {
+    font-size: 2em;
+    color: white;
 }
 
 @media screen and (max-width: 39.9375em) {
