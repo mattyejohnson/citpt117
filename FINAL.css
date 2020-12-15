@@ -8,7 +8,6 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    text-decoration: none;
 }
   
 .navbar {
@@ -57,6 +56,7 @@ body {
 
 .links,
 .logo {
+    text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
     text-align: center;
     text-transform: uppercase;
@@ -72,6 +72,7 @@ body {
 
 .main-nav li a {
     color: rgba(243, 241, 241, 0.664);
+    text-decoration: none;
 }
   
 .logo {
@@ -99,44 +100,44 @@ body {
 
 @media screen and (min-width: 1400px) {
     .navbar {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: .8em;
-      padding-top: 1.2em;
-      height: 70px;
-      align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: .8em;
+        padding-top: 1.2em;
+        height: 70px;
+        align-items: center;
     }
   
     #mobileToggle:checked + ul.main-nav {
-      display: flex;
+        display: flex;
     }
   
     .main-nav {
-      display: flex;
-      margin-right: 30px;
-      flex-direction: row;
-      justify-content: flex-end;
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
     }
   
     .main-nav li {
-      margin: 0;
+        margin: 0;
     }
   
     .nav-links {
-      margin-left: 40px;
+        margin-left: 40px;
     }
   
     .logo {
-      margin-top: 0;
+        margin-top: 0;
     }
   
     .navbar-toggle {
-      display: none;
+        display: none;
     }
   
     .logo:hover,
     .nav-links:hover {
-      color: rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 1);
     }
 
   }
@@ -209,11 +210,11 @@ body {
   
 @media screen and (max-width: 65em) {
     .news-card ul li h2 {
-      margin-left: 8%;
-      margin-right: 8%;
-      margin-top: 6%;
-      font-size: 2em;
-      font-family: "Punk Kid";
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-top: 6%;
+        font-size: 2em;
+        font-family: "Punk Kid";
     }
     .news-card ul li {
         font-size: 1em;
@@ -222,3 +223,146 @@ body {
 
 /* End poster CSS */
 
+/* Begin Gigs page CSS */
+
+.gig-table {
+    border-collapse: collapse;
+}
+  
+.gig-table.unstriped tbody {
+    background-color: transparent;
+  }
+  
+.gig-table th {
+    color: white;
+    font-size: 1.6em;
+}
+  
+.gig-table tr,
+.gig-table th,
+.gig-table td {
+    background-color: black;
+    font-family: 'Railway', sans-serif;
+}
+
+td p {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.gigs {
+    display: flex;
+}
+  
+.gigs h5 {
+    font-family: 'Railway', sans-serif;
+}
+  
+.tablesize {
+    width: 40%;
+    margin-top: .7em;
+}
+  
+.map {
+    flex: 1;
+    margin-top: .5em;
+    padding: .5em;
+    text-align: center;
+    background-color: rgb(240, 194, 237);
+    flex-direction: row;
+}
+  
+.map h4 {
+    font-family: 'Punk Kid';
+    font-size: 3em;
+}
+
+#dropdown label {
+    position: relative;
+    display: block;
+    width: 80%;
+    cursor: pointer;
+    color: white;
+    font-size: 1.1em;
+}
+  
+#dropdown input[type=checkbox] {
+    display: none; 
+}
+  
+li.collapse ul {
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0; 
+    transition: all 0.5s;
+}
+
+label::after {
+    content: "\25b6";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+}
+  
+li.collapse input:checked ~ ul {
+    visibility: visible;
+    opacity: 1;
+    max-height: 125em;
+}
+  
+li.collapse input:checked ~ label::after {
+    transform: rotate(90deg);
+}
+  
+#dropdown {
+    margin: .5em;
+    padding: 0;
+}
+
+#dropdown li {
+    list-style: none;
+    padding: .8rem .8rem;
+    border-bottom: .2rem solid #86AAD4;
+}
+
+#dropdown li:last-child {
+    border: 0;
+}
+  
+#dropdown a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+  
+@media screen and (max-width: 640px) {
+    .gigs {
+      flex-direction: column;
+    }
+    .tablesize {
+      width: 100%;
+    }
+    #menutree1 a {
+      display: block;
+      width: 90%;
+      text-decoration: none;
+      color: white;
+    }
+    #menutree1 label {
+      position: relative;
+      display: block;
+      width: 90%;
+      cursor: pointer;
+      color: white;
+      font-size: 1.1em;
+    }
+    .responsive-card-table thead tr {
+        position: absolute;
+        top: -9999em;
+        left: -9999em;
+    }
+}
