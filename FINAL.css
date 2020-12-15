@@ -345,6 +345,7 @@ li.collapse input:checked ~ label::after {
     list-style: none;
     padding: .8rem .8rem;
     border-bottom: .2rem solid #86AAD4;
+    color: white;
 }
 
 .dropdown li:last-child {
