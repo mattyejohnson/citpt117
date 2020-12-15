@@ -553,3 +553,17 @@ label::after {
 }
 
 /* End Bio page CSS */
+
+
+/* Begin Discography page CSS */
+
+.callout.primary {
+    background: #f07aee;
+}
+
+.callout.primary h1 {
+    font-family: "Punk Kid";
+    font-size: 6em;
+}
+
+/* End Discography page CSS */
