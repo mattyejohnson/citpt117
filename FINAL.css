@@ -252,11 +252,6 @@ td p {
     color: white;
 }
 
-thead {
-    border: 1px solid #f1f1f1;
-    background-color: #fefefe;
-}
-
 .gigs {
     display: flex;
 }
