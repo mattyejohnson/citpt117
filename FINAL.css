@@ -253,7 +253,7 @@ td p {
     color: white;
 }
 
-tbody, tfoot, thead {
+tfoot, thead {
     border: 1px solid #f1f1f1;
     background-color: #fefefe;
 }
