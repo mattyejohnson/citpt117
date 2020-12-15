@@ -186,10 +186,6 @@ body {
     padding-bottom: 10rem;
 }
 
-.card {
-    border: none;
-    background-color: transparent;
-
 .news {
     background: url(concretebio7.svg);
     position: absolute;
