@@ -561,6 +561,11 @@ label::after {
     background: #f07aee;
 }
 
+.callout.primary p {
+    font-family: 'Railway', sans-serif;
+    font-size: 1.2em;
+}
+
 .callout.primary h1 {
     font-family: "Punk Kid";
     font-size: 6em;
