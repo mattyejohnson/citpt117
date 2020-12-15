@@ -505,6 +505,10 @@ label::after {
     float: right;
     text-align: left;
 }
+
+.timeline-content-date p {
+    font-size: 2em;
+}
   
 .timeline h2 {
     font-family: "Punk Kid";
