@@ -1,4 +1,3 @@
-
 body {
     background-color: #f542f2;
 }
@@ -82,11 +81,11 @@ body {
   
 .navbar-toggle {
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: .625em;
+    right: 1.25em;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.8);
-    font-size: 24px;
+    font-size: 1.5rem;
 }
   
 #mobileToggle {
@@ -161,54 +160,14 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     background: url("concrete.svg") center center no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
   
-  .hero-full-screen .middle-content-section {
-    text-align: center;
-    color: #fefefe;
-  }
-  
-  .hero-full-screen .top-content-section {
-    width: 100%;
-  }
-  
-  .hero-full-screen .bottom-content-section {
-    padding: 1rem;
-  }
-  
-  .hero-full-screen .bottom-content-section svg {
-    height: 3.75rem;
-    width: 3.75rem;
-    fill: #fefefe;
-  }
-  
-  .hero-full-screen .top-bar {
-    background: transparent;
-  }
-  
-  .hero-full-screen .top-bar .menu {
-    background: transparent;
-  }
-  
-  .hero-full-screen .top-bar .menu-text {
-    color: #fefefe;
-  }
-  
-  .hero-full-screen .top-bar .menu li {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  
-  .hero-full-screen .top-bar .menu a {
-    color: #fefefe;
-    font-weight: bold;
-  }
-  
+  @media screen and (max-width: 45em) {
+      .hero-full-screen {
+          background-image: url("concreteSm.svg");
+      }
+    }
 
 /* End Index CSS */
 
@@ -668,7 +627,7 @@ label::after {
 /* Footer CSS */
 
 .footer {
-    background-image: url("footer.svg");
+    background-color: black;
     padding: 3rem 3rem;
     color: black;
 }
@@ -680,7 +639,7 @@ label::after {
 }
   
 .footer p {
-    color: #250425;
+    color: white;
     font-family: "Railway", sans-serif;
 }
   
@@ -693,6 +652,7 @@ label::after {
 .footer h4 {
     font-family: "Punk Kid";
     font-size: 2em;
+    color: white;
 }
   
 .footer .mailing-container {
@@ -705,31 +665,33 @@ label::after {
 }
   
 .footer .about-section a, .footer .tag-section a {
-    color: #3a1039;
+    color: #ef9df1;
     font-family: "Railway", sans-serif;
     font-size: 1.2em;
     font-weight: bolder;
 }
   
 .footer .subscribe-button {
-    background-color: black;
+    background-color: #ef9df1;
+    color: black;
 }
   
 .footer .subscribe-button:hover {
-    background-color: #ef9df1;
+    background-color: white;
+    color: black;
     transition: color 0.3s ease-in;
 }
-  
+/*
 .footer .fa-chevron-circle-up {
     font-size: 5rem;
-    color: #e5b8f0;
+    color: #ef9df1;
 }
   
 .footer .fa-chevron-circle-up:hover {
-    color: #ef9df1;
+    color: white;
     transition: color 0.3s ease-in;
 }
-
+*/
 /* End footer CSS */
 
 /* Breadcrumb CSS */
@@ -779,7 +741,7 @@ ul.breadcrumb {
     display: block;
     width: 80%;
     cursor: pointer;
-    color: white;
+    color: #f542f2;
     font-size: 1.1em;
     padding-left: 2em;
     padding-top: 2em;
@@ -828,6 +790,7 @@ label::after {
     padding-right: 1em;
     padding-top: 2em;
     line-height: 2em;
+    color: white;
 }
 
 .dropdown1 li:last-child {
@@ -838,8 +801,8 @@ label::after {
     display: block;
     width: 100%;
     text-decoration: none;
-    color: white;
     font-family: 'Railway', sans-serif;
+    color: white;
 }
 
 .portfolio-resume-scrolling-container {
@@ -847,6 +810,7 @@ label::after {
     width: 1400px;
     border: 1px solid #cacaca;
     background-image: url("concretebio8.svg");
+    background-color: black;
   }
   
   .portfolio-resume-overview {
@@ -908,5 +872,6 @@ label::after {
     }
       
   }
+
 
   /* End lyrics pages CSS */
