@@ -1,11 +1,11 @@
 @font-face {
     font-family: "punk kid";
-    src: url("punk kid.ttf") format('truetype');
+    src: url("punk kid.ttf");
 }
 
 @font-face {
     font-family: "Dharma Punk";
-    src: url("Dharma Punk.ttf") format('truetype');
+    src: url("Dharma Punk.ttf");
 }
 
 body {
