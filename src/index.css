@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Punk Kid';
+  src: url('punk kid.ttf');
+  src: local('punk kid'),
+    url("punk kid.ttf") format("ttf");
+}
+
 body {
     background-color: #f542f2;
 }
