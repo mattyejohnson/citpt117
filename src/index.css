@@ -798,15 +798,15 @@ label::after {
     color: white;
 }
 
-.portfolio-resume-scrolling-container {
+.scrolling-container {
     height: 187.5rem;
     width: 87.5rem;
     border: 0.0625rem solid #cacaca;
-    background-image: url("../img/concretebio8.svg");
+    background-image: url("concretebio8.svg");
     background-color: black;
 }
   
-.portfolio-resume-overview {
+.overview {
     height: 25rem;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -822,7 +822,7 @@ label::after {
     z-index: 0;
 }
   
-.portfolio-resume-overview:after {
+.overview:after {
     top: 0;
     left: 0;
     background-repeat: no-repeat;
@@ -830,12 +830,12 @@ label::after {
     z-index: 0;
 }
   
-.portfolio-resume-overview-content {
+.overview-content {
     max-width: 18.75rem;
     z-index: 1;
 }
   
-.portfolio-resume-scrolling {
+.scrolling {
     padding-top: .625rem;
     padding-bottom: .625rem;
     height: 62.5rem;
@@ -850,12 +850,12 @@ label::after {
 }
   
 @media print, screen and (max-width: 40em) {
-    .portfolio-resume-scrolling {
+    .scrolling {
       height: 25rem;
       overflow-y: auto;
     }
 
-    .portfolio-resume-overview-content {
+    .overview-content {
         width: 30%;
         margin-right: 37.5rem;
       }
@@ -865,5 +865,4 @@ label::after {
     }
       
 }
-
-  /* End lyrics pages CSS */
+/* End lyrics pages CSS */
