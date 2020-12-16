@@ -3,6 +3,11 @@
     src: url("punk kid.ttf") format('truetype');
 }
 
+@font-face {
+    font-family: "Dharma Punk";
+    src: url("Dharma Punk.ttf") format('truetype');
+}
+
 body {
     background-color: #f542f2;
 }
