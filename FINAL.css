@@ -91,11 +91,10 @@ body {
 #mobileToggle {
     display: none;
 }
-  
+
 #mobileToggle:checked + ul.main-nav {
     display: block;
 }
-
 
 @media screen and (min-width: 1400px) {
     .navbar {
@@ -160,7 +159,7 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     background: url("concrete.svg") center center no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
   
   @media screen and (max-width: 45em) {
@@ -680,6 +679,10 @@ label::after {
     background-color: white;
     color: black;
     transition: color 0.3s ease-in;
+}
+
+.footer label::after{
+    content: "";
 }
 /*
 .footer .fa-chevron-circle-up {
