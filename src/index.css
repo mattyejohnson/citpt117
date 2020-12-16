@@ -639,6 +639,7 @@ label::after {
     background-color: black;
     padding: 3rem 3rem;
     color: black;
+    display: block;
 }
   
 @media screen and (max-width: 39.9375em) {
