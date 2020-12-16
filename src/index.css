@@ -164,7 +164,7 @@ body {
   
   @media screen and (max-width: 45em) {
       .hero-full-screen {
-          background-image: url("concreteSm.svg");
+          background-image: url("../img/concreteSm.svg");
       }
     }
 
@@ -173,7 +173,7 @@ body {
 /* Begin CSS for news posters */
 
 .news-card {
-    background-image: url(poster7.png);
+    background-image: url("../img/poster7.png");
     background-size: 100% 100%;
     border-radius: 0;
     margin: auto;
@@ -215,7 +215,7 @@ body {
 }
 
 .news {
-    background: url(concretebio7.svg);
+    background: url("../img/concretebio7.svg");
     position: absolute;
     left: 0;
     right: 0;
@@ -448,7 +448,7 @@ label::after {
     position: relative;
     transition: all 0.25s ease-in;
     width: 100%;
-    background: url(concretebio8.svg);
+    background: url("../img/concretebio8.svg");
     background-color: black;
 }
   
@@ -795,7 +795,7 @@ label::after {
     height: 187.5rem;
     width: 87.5rem;
     border: 0.0625rem solid #cacaca;
-    background-image: url("concretebio8.svg");
+    background-image: url("../img/concretebio8.svg");
     background-color: black;
 }
   
