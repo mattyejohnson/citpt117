@@ -802,7 +802,7 @@ label::after {
     height: 187.5rem;
     width: 87.5rem;
     border: 0.0625rem solid #cacaca;
-    background-image: url("concretebio8.svg");
+    background-image: url("../img/concretebio8.svg");
     background-color: black;
 }
   
