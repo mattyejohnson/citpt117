@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Punk Kid';
-  src: url('punk kid.ttf');
-  src: local('punk kid'),
-    url("punk kid.ttf") format("ttf");
+  src: url('punk_kid.ttf');
+  src: local('punk_kid'),
+    url("punk_kid.ttf") format("ttf");
 }
 
 body {
