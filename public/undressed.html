@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name = "description" content = "Lyrics for songs from Undressed by Pansy Division."/>
     <title>Undressed Lyrics</title>
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-    <link rel="stylesheet" href = "FINAL.css">
+    <link rel="stylesheet" href = "../src/index.css">
   </head>
   <body>
-    
+    <!--Navbar-->
     <nav class="navbar">
         <label class="navbar-toggle" for="mobileToggle">
           <i class="fa fa-bars" aria-hidden="true" title="mobile menu"></i>
         </label>
     
-        <a href="index.html" class="logo"><img src="PD_logo.png" alt="Pansy Division Logo" width="300"></a>
+        <a href="index.html" class="logo"><img src="../img/PD_logo.png" alt="Pansy Division Logo" width="300"></a>
         <input type="checkbox" id="mobileToggle">
         <ul class="main-nav">
           <li>
@@ -30,9 +31,6 @@
             <a href="news.html" class="nav-links">News</a>
           </li>
           <li>
-            <a href="music.html" class="nav-links">Music</a>
-          </li>
-          <li>
             <a href="gigs.html" class="nav-links">Gigs</a>
           </li>
           <li>
@@ -40,15 +38,20 @@
           </li>
         </ul>
       </nav>
-
-
-<div class = "lyrics">
+      <!--End navbar-->
+      <!--Lyrics-->
+    <article class = "lyrics">
     <div class="portfolio-resume-scrolling-container row">
         <div class="columns small-12 medium-5 portfolio-resume-overview">
           <div class="portfolio-resume-overview-content">
-              <img src = "img/undressed.jpg" alt = "Undressed Album Cover" height = "600">
+              <img src = "../img/undressed.jpg" alt = "Undressed Album Cover" height = "600">
           </div>
         </div>
+        <ul class="breadcrumb">
+            <li><a href="discography.html">Discography</a></li>
+            <li>/</li>
+            <li>Undressed</li>
+          </ul>
         <div class="columns small-12 medium-7">
           <h1>UNDRESSED SONG LYRICS</h1>
           <div class="portfolio-resume-side-list">
@@ -673,48 +676,49 @@
                     </div>
             </div>
         </div>
-      </div>
-      <footer class="footer">
+    </article>
+    <!--End lyrics-->
+<!--Footer-->
+  <footer class="footer">
+    <div class="row">
+      <div class="medium-8 columns small-order-2 medium-order-1 about-container">
         <div class="row">
-          <div class="medium-8 columns small-order-2 medium-order-1 about-container">
-            <div class="row">
-              <div class="hide-for-small-only medium-4 columns about-section">
-                <img src="https://placehold.it/250x250">
-              </div>
-              <div class="medium-8 columns about-section">
-                <h4>Pansy Division</h4>
-                <p>Pansy Division is </p>
-                <a href="bio.html">More about us!</a>
-              </div>
-            </div>
+          <div class="hide-for-small-only medium-4 columns about-section">
+              <img src="../img/pansy_division.png" alt = "Pansy Division running in a group">
           </div>
-          <div class="small-12 medium-4 columns small-order-1 medium-order-2 mailing-container">
-            <h4 class="mailing-list">Get emails from us!</h4>
-            <label title = "submit">
-            <input type="text" placeholder="Email" title = "Subscribe Button">
-            <a class="button expanded subscribe-button" href="#">Subscribe Now</a>
-            </label>
+          <div class="medium-8 columns about-section">
+              <h4>Pansy Division</h4>
+              <p>Pansy Division is a queercore punk band that started in 1991. We've played almost a thousand shows
+                and released a variety of albums and singles. 
+              </p>
+              <a href="bio.html">More about us!</a>
           </div>
         </div>
-        <div class="row tag-search">
-          <div class="columns">
-            <ul class="menu simple tag-section">
-              <li><a href="https://www.instagram.com/pansydivisionofficial/">Instagram</a></li>
-              <li><a href="https://twitter.com/pansydivision">Twitter</a></li>
-              <li><a href="https://www.facebook.com/groups/13365767036/">Facebook</a></li>
-              <li><a href="">iTunes</a></li>
-              <li><a href="">Bandcamp</a></li>
-              <li><a href="">Spotify</a></li>
-              <li><a href="">Apple Music</a></li>
-            </ul>
-          </div>
+      </div>
+      <div class="small-12 medium-4 columns small-order-1 medium-order-2 mailing-container">
+        <h4 class="mailing-list">Get emails from us!</h4>
+          <label title = "submit">
+          <input type="text" placeholder="Email" title = "Subscribe Button">
+          <a class="button expanded subscribe-button" href="#">Subscribe Now</a>
+          </label>
         </div>
-        <div class="row columns flex-container align-justify">
-           <p><em>Copyright 2020 Mattye Johnson</em></p>
-          <div class="up-arrow">
-            <a href="top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
-          </div>
+      </div>
+      <div class="row tag-search">
+        <div class="columns">
+          <ul class="menu simple tag-section">
+            <li><a href="https://www.instagram.com/pansydivisionofficial/">Instagram</a></li>
+            <li><a href="https://twitter.com/pansydivision">Twitter</a></li>
+            <li><a href="https://www.facebook.com/groups/13365767036/">Facebook</a></li>
+            <li><a href="https://pansydivision.bandcamp.com/">Bandcamp</a></li>
+            <li><a href="https://open.spotify.com/artist/5OyEfwMlXpCWU8dWVENGgm">Spotify</a></li>
+            <li><a href="https://music.apple.com/us/artist/pansy-division/3187509">Apple Music</a></li>
+          </ul>
         </div>
-      </footer>
-      </body>
-      </html>
+      </div>
+      <div class="row columns flex-container align-justify">
+        <p><em>Copyright 2020 Mattye Johnson</em></p>
+      </div>
+  </footer>
+  <!--End footer-->
+    </body>
+</html>
