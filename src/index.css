@@ -1,0 +1,862 @@
+body {
+    background-color: #f542f2;
+}
+
+/* Begin CSS for main navigation bar */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+.navbar {
+    background-color:  #f542f2;
+    font-size: 3.5rem;
+    font-family: "Dharma Punk";
+}
+  
+.main-nav {
+    list-style-type: none;
+    display: none;    
+}
+
+.main-nav a:before,
+.main-nav a::after {
+    background-color: white;
+    width: 0;
+}
+
+.main-nav li.active > a {
+    background-color: transparent;
+}
+  
+.main-nav a::before {
+    top: 0;
+    left: 0;
+}
+  
+.main-nav a::after {
+    bottom: 0;
+    right: 0;
+}
+  
+.main-nav a:hover,
+.main-nav li.active > a {
+    color: white;
+    transition: all 0.35s ease;
+}
+  
+.main-nav a:hover::before,
+.main-nav .active a::before,
+.main-nav a:hover::after,
+.main-nav .active a::after {
+    width: 100%;
+}
+
+.links,
+.logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Dharma Punk";
+    padding-bottom: 1.8rem;
+    padding-top: 2.3rem;
+}
+  
+.main-nav li {
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.main-nav li a {
+    color: rgba(243, 241, 241, 0.664);
+    text-decoration: none;
+}
+  
+.logo {
+    display: inline-block;
+    padding-left: 1rem;
+}
+  
+.navbar-toggle {
+    position: absolute;
+    top: .625em;
+    right: 1.25em;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+}
+  
+#mobileToggle {
+    display: none;
+}
+
+#mobileToggle:checked + ul.main-nav {
+    display: block;
+}
+
+@media screen and (min-width: 1400px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1em;
+        padding-top: 1.2em;
+        height: 4.375rem;
+        align-items: center;
+    }
+  
+    #mobileToggle:checked + ul.main-nav {
+        display: flex;
+    }
+  
+    .main-nav {
+        display: flex;
+        margin-right: 1.875rem;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+  
+    .main-nav li {
+        margin: 0;
+    }
+  
+    .nav-links {
+        margin-left: 2.5rem;
+    }
+  
+    .logo {
+        margin-top: 0;
+    }
+  
+    .navbar-toggle {
+        display: none;
+    }
+  
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+
+  }
+
+/* End navbar CSS */
+
+/* Begin CSS for Index page */
+
+.hero-full-screen {
+    height: 100vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: url("concrete.svg") center center no-repeat;
+    background-size: cover;
+  }
+  
+  @media screen and (max-width: 45em) {
+      .hero-full-screen {
+          background-image: url("concreteSm.svg");
+      }
+    }
+
+/* End Index CSS */
+
+/* Begin CSS for news posters */
+
+.news-card {
+    background-image: url(poster7.png);
+    background-size: 100% 100%;
+    border-radius: 0;
+    margin: auto;
+    width: 90%;
+  }
+  
+.news-card ul {
+    list-style-type: none;
+    margin: 0;
+}
+  
+.news-card ul li {
+    margin-left: 14%;
+    margin-right: 14%;
+    padding: 1%;
+    margin-top: 1%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+  
+.news-card ul li h2 {
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-top: 19%;
+    font-size: 4rem;
+    font-family: "Punk Kid";
+    font-weight: 200;
+}
+
+.news-card ul li a {
+    color: #4d154c;
+    font-weight: bolder;
+}
+
+.news-card .card-section ul {
+    padding-bottom: 10rem;
+}
+
+.news {
+    background: url(concretebio7.svg);
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.news h1 {
+    font-size: 4em;
+    font-family: "Punk Kid";
+    text-align: center;
+    color: #581857;
+    font-weight: 200;
+}
+
+.news:after {
+    content: "";
+    display: block;
+}
+  
+@media screen and (max-width: 65em) {
+    .news-card ul li h2 {
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-top: 6%;
+        font-size: 2em;
+        font-family: "Punk Kid";
+    }
+    .news-card ul li {
+        font-size: 1em;
+    }
+}
+
+/* Animation */
+
+.news .animate__jello {
+    animation-duration: 1s;
+    animation-iteration-count: 4;
+}
+
+/* End animation */
+
+/* End poster CSS */
+
+/* Begin Gigs page CSS */
+
+.gig-table {
+    border-collapse: collapse;
+    border: white 1px;
+}
+  
+.gig-table.unstriped tbody {
+    background-color: transparent;
+}
+  
+.gig-table th {
+    color: white;
+    font-size: 1.6em;
+}
+  
+.gig-table tr,
+.gig-table th,
+.gig-table td {
+    background-color: black;
+    font-family: 'Railway', sans-serif;
+}
+
+td p {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+tbody, tfoot, thead {
+    border: 0.0625rem solid #f1f1f1;
+    background-color: #fefefe;
+}
+
+.gigs {
+    display: flex;
+}
+  
+.gigs h5 {
+    font-family: 'Railway', sans-serif;
+}
+  
+.tablesize {
+    width: 40%;
+    margin-top: .7em;
+}
+  
+.map {
+    flex: 1;
+    margin-top: .5em;
+    padding: .5em;
+    text-align: center;
+    background-color: rgb(240, 194, 237);
+    flex-direction: row;
+}
+  
+.map h4 {
+    font-family: 'Punk Kid';
+    font-size: 3em;
+    text-rendering: optimizeLegibility;
+    font-weight: normal;
+}
+
+.map h5 {
+    padding: 1em;
+    font-weight: normal;
+    font-size: 1.5em;
+    font-family: 'Railway', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.dropdown label {
+    position: relative;
+    display: block;
+    width: 80%;
+    cursor: pointer;
+    color: white;
+    font-size: 1.1em;
+    padding-left: 2em;
+    padding-top: 2em;
+}
+  
+.dropdown input[type=checkbox] {
+    display: none; 
+}
+  
+.collapse ul {
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0; 
+    transition: all 0.5s;
+}
+
+label::after {
+    content: "\25b6";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    padding-top: 2em;
+}
+  
+.collapse input:checked ~ ul {
+    visibility: visible;
+    opacity: 1;
+    max-height: 1000rem;
+}
+  
+.collapse input:checked ~ label::after {
+    transform: rotate(90deg);
+}
+  
+.dropdown {
+    margin: .5em;
+    padding: 0;
+}
+
+.dropdown li {
+    list-style: none;
+    padding: .8rem .8rem;
+    border-bottom: .2rem solid #86AAD4;
+    padding-left: 2em;
+    padding-right: 1em;
+    padding-top: 2em;
+    line-height: 2em;
+}
+
+.dropdown li:last-child {
+    border: 0;
+}
+  
+.dropdown a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-family: 'Railway', sans-serif;
+}
+  
+@media screen and (max-width: 640px) {
+    .gigs {
+      flex-direction: column;
+    }
+    .tablesize {
+      width: 100%;
+    }
+    .dropdown a {
+      display: block;
+      width: 90%;
+      text-decoration: none;
+      color: white;
+    }
+    .dropdown label {
+      position: relative;
+      display: block;
+      width: 90%;
+      cursor: pointer;
+      color: white;
+      font-size: 1.1em;
+    }
+    .responsive-card-table thead tr {
+        position: absolute;
+        top: -9999em;
+        left: -9999em;
+    }
+}
+
+/* End Gigs CSS */
+
+/* Begin CSS for Bio page + timeline */
+
+.timeline .timeline-item::after, .timeline .timeline-item::before {
+    clear: both;
+    content: '';
+    display: block;
+    width: 100%;
+}
+  
+.timeline {
+    margin: 1.875rem auto;
+    padding: 0 .625rem;
+    position: relative;
+    transition: all 0.25s ease-in;
+    width: 100%;
+    background: url(concretebio8.svg);
+    background-color: black;
+}
+  
+.timeline::before {
+    background: #fefefe;
+    content: '';
+    margin-top: 12em;
+    height: 95%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    width: 0.1875em;
+}
+  
+.timeline::after {
+    clear: both;
+    content: '';
+    display: table;
+    width: 100%;
+}
+  
+.timeline a {
+    color: white;
+    font-weight: bold;
+    transition: all 0.25s ease-in;
+}
+  
+.timeline a:hover {
+    box-shadow: 0 .0023rem 0 0 #fefefe;
+    transition: all 0.25s ease-in;
+}
+  
+.timeline .timeline-item {
+    margin-bottom: 50px;
+    position: relative;
+}
+  
+.timeline .timeline-item .timeline-icon {
+    background: #fefefe;
+    border-radius: 50%;
+    height: 3.125rem;
+    left: 50%;
+    margin-left: -1.4375rem;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 3.125rem;
+}
+  
+.timeline .timeline-item .timeline-icon img,
+.timeline .timeline-item .timeline-icon svg {
+    left: .875rem;
+    position: relative;
+    top: .6875rem;
+}
+  
+.timeline .timeline-item .timeline-icon svg {
+    top: .875rem;
+}
+  
+.timeline .timeline-item .timeline-content {
+    padding: 1.25rem;
+    text-align: right;
+    transition: all 0.25s ease-in;
+    width: 45%;
+    background: transparent;
+}
+  
+.timeline .timeline-item .timeline-content p {
+    font-size: 1.3125em;
+    line-height: 1.4;
+    margin-bottom: 0;
+    color: white;
+    font-family: 'Railway', sans-serif;
+}
+  
+.timeline .timeline-item .timeline-content .timeline-content-date {
+    font-size: 1.4375em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+  
+.timeline .timeline-item .timeline-content .timeline-content-month {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+  
+.timeline .timeline-item .timeline-content.right {
+    float: right;
+    text-align: left;
+}
+  
+.timeline h1 {
+    font-family: "Punk Kid";
+    text-align: center;
+    font-size: 4em;
+    color: rgb(240, 130, 212);
+    z-index: 1;
+    margin-bottom: 1em;
+}
+
+.timeline-content-date {
+    font-size: 2em;
+    color: white;
+    font-family: 'Railway', sans-serif;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .timeline {
+      padding: 0;
+      width: 100%;
+    }
+    .timeline::before {
+      left: 0;
+    }
+    .timeline .timeline-item .timeline-content {
+      float: right;
+      text-align: left;
+      width: 90%;
+    }
+    .timeline .timeline-item .timeline-content::before, .timeline .timeline-item .timeline-content.right::before {
+      border-left: 0;
+      border-right: .4375rem solid #fefefe;
+      left: 10%;
+      margin-left: -.375rem;
+    }
+    .timeline .timeline-item .timeline-icon {
+      left: 1em;
+    }
+    .type-sidelines span {
+        display: inline-block;
+        position: relative;
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+}
+
+/* End Bio page CSS */
+
+/* Begin Discography page CSS */
+
+.callout.primary {
+    background: #f07aee;
+}
+
+.callout.primary h1 {
+    font-family: "Punk Kid";
+    font-size: 6em;
+}
+
+.callout.primary p {
+    font-family: 'Railway', sans-serif;
+    font-size: 1.2em;
+}
+
+.column h2 {
+    font-family: 'Railway', sans-serif;
+    font-size: 1.5em;
+}
+
+/* End Discography page CSS */
+
+/* Contact page h1 CSS */
+
+.contact h1 {
+    font-size: 3em;
+    font-family: "Punk Kid";
+    text-align: center;
+    background-color: rgb(240, 194, 237);
+}
+
+/* End contact page h1 CSS */
+
+/* Footer CSS */
+
+.footer {
+    background-color: black;
+    padding: 3rem 3rem;
+    color: black;
+}
+  
+@media screen and (max-width: 39.9375em) {
+    .footer h4 {
+      font-size: 1.5rem;
+    }
+}
+  
+.footer p {
+    color: white;
+    font-family: "Railway", sans-serif;
+}
+  
+.footer .mailing-list {
+    margin-bottom: 1.5rem;
+    font-family: "Punk Kid";
+    font-size: 2em;
+}
+
+.footer h4 {
+    font-family: "Punk Kid";
+    font-size: 2em;
+    color: white;
+}
+  
+.footer .mailing-container {
+    margin-bottom: 2rem;
+}
+  
+.footer .about-section, .footer .tag-section {
+    margin-bottom: 2rem;
+    font-family: "Railway", sans-serif;
+}
+  
+.footer .about-section a, .footer .tag-section a {
+    color: #ef9df1;
+    font-family: "Railway", sans-serif;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+  
+.footer .subscribe-button {
+    background-color: #ef9df1;
+    color: black;
+}
+  
+.footer .subscribe-button:hover {
+    background-color: white;
+    color: black;
+    transition: color 0.3s ease-in;
+}
+
+.footer label::after{
+    content: "";
+}
+/* End footer CSS */
+
+/* Breadcrumb CSS */
+ul.breadcrumb {
+    padding: .625rem .625rem;
+    list-style: none;
+    padding-top: 2em;
+}
+  
+ul.breadcrumb li {
+    display: inline;
+    font-size: 1.125rem;
+    padding-left: 1em;
+    color: #f89cf8;
+}
+  
+ul.breadcrumb li a {
+    color: #f542f2;
+    text-decoration: none;
+}
+  
+ul.breadcrumb li a:hover {
+    color: #f89cf8;
+}
+
+/* End breadcrumb CSS */
+
+/* Lyrics pages CSS */
+
+.columns h1 {
+    color: white;
+    text-align: center;
+    margin-top: .5em;
+    font-family: "Punk Kid";
+    font-size: 3em;
+}
+  
+
+.dropdown1 label {
+    position: relative;
+    display: block;
+    width: 80%;
+    cursor: pointer;
+    color: #f542f2;
+    font-size: 1.1em;
+    padding-left: 2em;
+    padding-top: 2em;
+}
+  
+.dropdown1 input[type=checkbox] {
+    display: none; 
+}
+  
+.collapse1 ul {
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0; 
+    transition: all 0.5s;
+}
+
+label::after {
+    content: "\25b6";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    padding-top: 2em;
+}
+  
+.collapse1 input:checked ~ ul {
+    visibility: visible;
+    opacity: 1;
+    max-height: 125em;
+}
+  
+.collapse1 input:checked ~ label::after {
+    transform: rotate(90deg);
+}
+  
+.dropdown1 {
+    margin: .5em;
+    padding: 0;
+}
+
+.dropdown1 li {
+    list-style: none;
+    padding: .8rem .8rem;
+    border-bottom: .2rem solid #86AAD4;
+    padding-left: 2em;
+    padding-right: 1em;
+    padding-top: 2em;
+    line-height: 2em;
+    color: white;
+}
+
+.dropdown1 li:last-child {
+    border: 0;
+}
+  
+.dropdown1 a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    font-family: 'Railway', sans-serif;
+    color: white;
+}
+
+.portfolio-resume-scrolling-container {
+    height: 187.5rem;
+    width: 87.5rem;
+    border: 0.0625rem solid #cacaca;
+    background-image: url("concretebio8.svg");
+    background-color: black;
+}
+  
+.portfolio-resume-overview {
+    height: 25rem;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    opacity: 1;
+    z-index: 0;
+}
+  
+.portfolio-resume-overview:after {
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+  
+.portfolio-resume-overview-content {
+    max-width: 18.75rem;
+    z-index: 1;
+}
+  
+.portfolio-resume-scrolling {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+    height: 62.5rem;
+}
+
+label::after {
+    content: "\25b6";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+}
+  
+@media print, screen and (max-width: 40em) {
+    .portfolio-resume-scrolling {
+      height: 25rem;
+      overflow-y: auto;
+    }
+
+    .portfolio-resume-overview-content {
+        width: 30%;
+        margin-right: 37.5rem;
+      }
+
+    .columns h1 {
+        margin-right: 37.5rem;
+    }
+      
+}
+
+  /* End lyrics pages CSS */
