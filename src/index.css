@@ -17,7 +17,7 @@ body {
 .navbar {
     background-color:  #f542f2;
     font-size: 3.5rem;
-    font-family: "Dharma Punk";
+    font-family: "Dharma Punk", sans-serif;
 }
   
 .main-nav {
@@ -64,7 +64,7 @@ body {
     color: rgba(255, 255, 255, 0.7);
     text-align: center;
     text-transform: uppercase;
-    font-family: "Dharma Punk";
+    font-family: "Dharma Punk", sans-serif;
     padding-bottom: 1.8rem;
     padding-top: 2.3rem;
 }
@@ -228,7 +228,7 @@ body {
 
 .news h1 {
     font-size: 4em;
-    font-family: "Punk Kid";
+    font-family: "Punk Kid", sans-serif;
     text-align: center;
     color: #581857;
     font-weight: 200;
@@ -245,7 +245,7 @@ body {
         margin-right: 8%;
         margin-top: 6%;
         font-size: 2em;
-        font-family: "Punk Kid";
+        font-family: "Punk Kid", sans-serif;
     }
     .news-card ul li {
         font-size: 1em;
@@ -321,7 +321,7 @@ tbody, tfoot, thead {
 }
   
 .map h4 {
-    font-family: 'Punk Kid';
+    font-family: 'Punk Kid', sans-serif;
     font-size: 3em;
     text-rendering: optimizeLegibility;
     font-weight: normal;
@@ -601,7 +601,7 @@ label::after {
 }
 
 .callout.primary h1 {
-    font-family: "Punk Kid";
+    font-family: "Punk Kid", sans-serif;
     font-size: 6em;
 }
 
@@ -722,7 +722,7 @@ ul.breadcrumb li a:hover {
     color: white;
     text-align: center;
     margin-top: .5em;
-    font-family: "Punk Kid";
+    font-family: "Punk Kid", sans-serif;
     font-size: 3em;
 }
   
